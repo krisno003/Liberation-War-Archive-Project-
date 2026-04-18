@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents | Liberation War Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.  3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header>
+       
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interview.html">Interview</a></li>
+                <li><a href="document.html">Documents</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="py-5 bg-light min-vh-100">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 border-start border-4 border-primary ps-4">
+        <h2 class="fw-bold">Historical Document Archive</h2>
+        <p class="text-muted">A curated collection of treaties, declarations, and official correspondence from 1971.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <aside class="col-lg-3 mb-4">
+        <div class="card shadow-sm border-0 sticky-top" style="top: 20px;">
+          <div class="card-body">
+            <h5 class="fw-bold mb-3"><i class="bi bi-filter-left me-2"></i>Filter Archive</h5>
+            
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Document Type</label>
+              <select class="form-select form-select-sm" id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="declaration">Declarations</option>
+                <option value="treaty">Treaties</option>
+                <option value="correspondence">Official Letters</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Timeline</label>
+              <select class="form-select form-select-sm" id="dateFilter">
+                <option value="all">All Months (1971)</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="december">December</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="col-lg-9">
+        <div class="row g-4" id="documentGrid">
+          <div class="col-md-6 doc-item" data-type="declaration" data-date="march">
+            <div class="card h-100 border-0 shadow-sm doc-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-danger">Declaration</span>
+                  <small class="text-muted">March 26, 1971</small>
+                </div>
+                <h5 class="card-title fw-bold">Proclamation of Independence</h5>
+                <p class="card-text text-muted small">The formal declaration that marked the birth of the sovereign state of Bangladesh.</p>
+                <button class="btn btn-sm btn-outline-primary mt-auto view-doc-btn" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#docModal"
+                        data-title="Proclamation of Independence"
+                        data-source="Mujibnagar Government"
+                        data-desc="This document was formally adopted on April 10, 1971, confirming the declaration of independence made on March 26.">
+                  View Full Details
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 doc-item" data-type="treaty" data-date="december">
+            <div class="card h-100 border-0 shadow-sm doc-card">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-primary">Treaty</span>
+                  <small class="text-muted">Dec 16, 1971</small>
+                </div>
+                <h5 class="card-title fw-bold">Instrument of Surrender</h5>
+                <p class="card-text text-muted small">The official document signed at Ramna Race Course ending the Liberation War.</p>
+                <button class="btn btn-sm btn-outline-primary mt-auto view-doc-btn" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#docModal"
+                        data-title="Instrument of Surrender"
+                        data-source="Joint Command of India & Bangladesh"
+                        data-desc="Signed by Lt. Gen. A.A.K. Niazi and Lt. Gen. Jagjit Singh Aurora, marking the liberation of Dhaka.">
+                  View Full Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="docModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title fw-bold" id="modalTitle">Document Title</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class="col-md-4 text-center border-end">
+             <i class="bi bi-file-earmark-pdf fs-1 text-danger"></i>
+             <p class="mt-2 fw-bold text-uppercase small">Primary Source</p>
+             <hr>
+             <p class="small"><strong>Source:</strong> <span id="modalSource">Source Name</span></p>
+          </div>
+          <div class="col-md-8">
+            <h6 class="fw-bold">Description</h6>
+            <p id="modalDesc" class="text-muted">Description goes here.</p>
+            <div class="alert alert-secondary py-2 mt-4">
+              <small><i class="bi bi-info-circle me-2"></i>This document is part of the Digital National Archives collection.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"><i class="bi bi-download me-2"></i>Download PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="py-5 bg-white"> 
+  <div class="container">
+    <div class="row g-5">
+      
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 bg-success bg-opacity-10 border-start border-5 border-success h-100">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-broadcast fs-1 text-success me-3"></i>
+            <h3 class="fw-bold mb-0">The Airwaves of Freedom</h3>
+          </div>
+          <p class="lead small fw-bold text-success text-uppercase">Shadhin Bangla Betar Kendra</p>
+          <p class="text-muted">
+            Operating from secret locations, this radio station was the heartbeat of the revolution. It broadcasted "Joye Bangla" songs and the famous <strong>Choroipotro</strong> by M.R. Akhtar Mukul, which used biting satire to boost the morale of freedom fighters.
+          </p>
+          <div class="mt-4 p-3 bg-white rounded shadow-sm border">
+             <p class="mb-1 fw-bold small"><i class="bi bi-music-note-beamed me-2"></i>Iconic Anthem</p>
+             <p class="small text-muted mb-0">"Amar Sonar Bangla" — Adopted as the national anthem during this period.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="p-4 rounded-4 bg-danger bg-opacity-10 border-start border-5 border-danger h-100">
+          <div class="d-flex align-items-center mb-3">
+            <i class="bi bi-journal-x fs-1 text-danger me-3"></i>
+            <h3 class="fw-bold mb-0">The Martyred Intellectuals</h3>
+          </div>
+          <p class="lead small fw-bold text-danger text-uppercase">December 14, 1971</p>
+          <p class="text-muted">
+            Sensing defeat, the occupation forces and their collaborators systematically abducted and murdered the nation's brightest doctors, professors, and journalists to cripple the future of Bangladesh.
+          </p>
+          <div class="row g-2 mt-2">
+            <div class="col-6"><span class="badge bg-dark w-100 py-2">Dr. Alim Chowdhury</span></div>
+            <div class="col-6"><span class="badge bg-dark w-100 py-2">Munier Chowdhury</span></div>
+            <div class="col-6"><span class="badge bg-dark w-100 py-2">Selina Parvin</span></div>
+            <div class="col-6"><span class="badge bg-dark w-100 py-2">Shahidullah Kaiser</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light border-top">
+  <div class="container">
+    <h4 class="text-center fw-bold text-secondary mb-5 text-uppercase ls-2">Global Support Network</h4>
+    <div class="row row-cols-2 row-cols-md-4 g-4 text-center opacity-75">
+      <div class="col">
+        <div class="p-3">
+          <h5 class="fw-bold mb-1">India</h5>
+          <p class="small text-muted">Shelter for 10M Refugees & Military Alliance</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <h5 class="fw-bold mb-1">Soviet Union</h5>
+          <p class="small text-muted">Diplomatic Veto at the UN Security Council</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <h5 class="fw-bold mb-1">George Harrison</h5>
+          <p class="small text-muted">The Concert for Bangladesh (NYC)</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <h5 class="fw-bold mb-1">Archer Blood</h5>
+          <p class="small text-muted">The 'Blood Telegram' Dissent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row mt-5">
+  <div class="col-lg-12">
+    <div class="p-4 bg-white border rounded-3 shadow-sm">
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-shield-check fs-2 text-success me-3"></i>
+        <h4 class="fw-bold mb-0">Our Archival Standards</h4>
+      </div>
+      <p class="text-muted">
+        Every document in this catalog has been digitized from primary sources. We work closely with the <strong>National Archives of Bangladesh</strong> and the <strong>Liberation War Museum</strong> to ensure that every treaty, letter, and telegram is historically accurate and verified by academic experts.
+      </p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="p-2 border rounded text-center small bg-light">
+             <i class="bi bi-file-earmark-pdf me-1"></i> High-Res Scans
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-2 border rounded text-center small bg-light">
+             <i class="bi bi-translate me-1"></i> Dual Language (BN/EN)
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-2 border rounded text-center small bg-light">
+             <i class="bi bi-bookmark-star me-1"></i> Annotated Context
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mt-4 border-0 bg-primary text-white shadow">
+  <div class="card-body p-4">
+    <h5 class="fw-bold"><i class="bi bi-tools me-2"></i>Researcher's Toolkit</h5>
+    <p class="small opacity-75">Tools to help you cite and use these documents in your academic work.</p>
+    <ul class="list-unstyled mb-0">
+      <li class="mb-2"><a href="#" class="text-white text-decoration-none small"><i class="bi bi-download me-2"></i>Download All (1971 March Collection)</a></li>
+      <li class="mb-2"><a href="#" class="text-white text-decoration-none small"><i class="bi bi-quote me-2"></i>Citation Guide (APA/MLA)</a></li>
+      <li><a href="#" class="text-white text-decoration-none small"><i class="bi bi-printer me-2"></i>Print-Ready Historical Maps</a></li>
+    </ul>
+  </div>
+</div>
+<div class="card shadow-sm border-0 mb-4">
+  <div class="card-header bg-primary text-white py-3">
+    <h6 class="mb-0 fw-bold"><i class="bi bi-folder2-open me-2"></i>Archive Navigator</h6>
+  </div>
+  <div class="card-body">
+    <div class="input-group mb-4">
+      <input type="text" class="form-control form-control-sm" placeholder="Search keywords...">
+      <button class="btn btn-outline-primary btn-sm"><i class="bi bi-search"></i></button>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label small fw-bold text-uppercase text-muted">Document Origin</label>
+      <div class="form-check small">
+        <input class="form-check-input" type="checkbox" value="" id="origin1" checked>
+        <label class="form-check-label" for="origin1">Mujibnagar Gov.</label>
+      </div>
+      <div class="form-check small">
+        <input class="form-check-input" type="checkbox" value="" id="origin2">
+        <label class="form-check-label" for="origin2">Military Command</label>
+      </div>
+      <div class="form-check small">
+        <input class="form-check-input" type="checkbox" value="" id="origin3">
+        <label class="form-check-label" for="origin3">International Press</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mb-5">
+  <div class="p-5 text-white bg-dark rounded-3 shadow-lg spotlight-banner">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <span class="badge bg-danger mb-3">Spotlight Document</span>
+        <h2 class="display-6 fw-bold">The 7th March Speech Transcript</h2>
+        <p class="lead">Now part of the UNESCO 'Memory of the World' Register. This transcript captures the exact words that unified 75 million people.</p>
+        <button class="btn btn-primary btn-lg mt-3 shadow">Read Full Analysis</button>
+      </div>
+      <div class="col-md-4 d-none d-md-block text-center">
+        <i class="bi bi-file-earmark-richtext" style="font-size: 8rem; opacity: 0.2;"></i>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About the Archive</h3>
+                <p>A non-profit initiative dedicated to documenting the heroic struggle for independence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Martyr's List</a></li>
+                    <li><a href="#">Sector Maps</a></li>
+                    <li><a href="#">Research Papers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Liberation War Archive | Joy Bangla
+        </div>
+    </footer>
+
+</body>
+</html>

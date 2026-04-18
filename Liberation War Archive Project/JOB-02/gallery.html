@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Liberation War Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="interview.html">Interview</a></li>
+        <li><a href="document.html">Documents</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="py-5 bg-dark min-vh-100">
+    <div class="container">
+      <div class="row mb-5 text-white">
+        <div class="col-md-8">
+          <h2 class="display-5 fw-bold text-uppercase border-start border-4 border-danger ps-3">Visual History
+            Archive</h2>
+          <p class="text-secondary mt-3">A curated collection of restored photographs from 1971. Click on an
+            image to zoom and download.</p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 mb-5 justify-content-center">
+        <button class="btn btn-danger filter-btn active" data-filter="all">All Photos</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="events">Major Events</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="locations">Key Locations</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="people">Freedom Fighters</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="refugees">The People's Struggle</button>
+      </div>
+
+      <div class="row g-4" id="galleryGrid">
+
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="events">
+          <div class="card bg-black border-secondary overflow-hidden h-100 gallery-card">
+            <a href="path-to-high-res-image.jpg" class="glightbox" data-gallery="war-archive"
+              data-title="The Surrender Ceremony" data-description="December 16, 1971. Dhaka.">
+              <img src="Images/surrender ceremony dhaka .jpg  " class="img-fluid gallery-img" alt="Surrender Ceremony">
+              <div class="gallery-overlay">
+                <i class="bi bi-zoom-in fs-2 text-white"></i>
+              </div>
+            </a>
+            <div class="card-body bg-dark text-center py-2">
+              <small class="text-secondary">Surrender Ceremony, Dhaka</small>
+              <div class="mt-2">
+                <a href="path-to-high-res-image.jpg" download class="btn btn-sm btn-outline-secondary py-0 px-2">
+                  <i class="bi bi-download me-1"></i>Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 gallery-item" data-category="people">
+          <div class="card bg-black border-secondary overflow-hidden h-100 gallery-card">
+            <a href="path-to-image-2.jpg" class="glightbox" data-gallery="war-archive" data-title="Training in the Rain"
+              data-description="Freedom fighters practicing in a training camp.">
+              <img src="Images/Bangladeshi freedom fighter.jpg" class="img-fluid gallery-img" alt="Freedom Fighters">
+              <div class="gallery-overlay">
+                <i class="bi bi-zoom-in fs-2 text-white"></i>
+              </div>
+            </a>
+            <div class="card-body bg-dark text-center py-2">
+              <small class="text-secondary">Mukti Bahini Training</small>
+              <div class="mt-2">
+                <a href="path-to-image-2.jpg" download class="btn btn-sm btn-outline-secondary py-0 px-2">
+                  <i class="bi bi-download me-1"></i>Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="photo-gallery" class="py-5 bg-black text-white">
+    <div class="container">
+
+      <div class="row mb-5">
+        <div class="col-lg-8">
+          <h2 class="display-5 fw-bold text-uppercase ls-2">The Visual Archive</h2>
+          <div class="bg-danger mt-2 mb-3" style="height: 4px; width: 60px;"></div>
+          <p class="text-secondary">A curated collection of restored photographs capturing the resilience, struggle, and
+            ultimate victory of 1971.</p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 mb-5 justify-content-start">
+        <button class="btn btn-danger filter-btn active" data-filter="all">All Photos</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="events">Historical Events</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="freedom-fighters">The Fighters</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="genocide">Genocide Awareness</button>
+        <button class="btn btn-outline-light filter-btn" data-filter="victory">Victory Day</button>
+      </div>
+
+      <div class="row g-4" id="gallery-container">
+
+        <div class="col-md-6 col-lg-4 gallery-item freedom-fighters">
+          <div class="card bg-dark border-0 overflow-hidden shadow h-100">
+            <div class="gallery-img-wrapper position-relative">
+              <img src="Images/Training Camp, 1971.jpg" class="card-img-top gallery-img"
+                alt="Freedom Fighters Training">
+              <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Freedom_Fighters_of_Bangladesh_1971.jpg"
+                  class="btn btn-light btn-sm mx-1 glightbox"><i class="bi bi-zoom-in"></i> Zoom</a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Freedom_Fighters_of_Bangladesh_1971.jpg"
+                  download class="btn btn-danger btn-sm mx-1"><i class="bi bi-download"></i> Download</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">Mukti Bahini Training</h6>
+              <p class="small text-secondary mb-0">Location: Training Camp, 1971</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item victory">
+          <div class="card bg-dark border-0 overflow-hidden shadow h-100">
+            <div class="gallery-img-wrapper position-relative">
+              <img src="Images/Ramna Race .jpg" class="card-img-top gallery-img" alt="Instrument of Surrender">
+              <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Surrender_of_Pakistan_16_December_1971.jpg"
+                  class="btn btn-light btn-sm mx-1 glightbox"><i class="bi bi-zoom-in"></i> Zoom</a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/b/b3/Surrender_of_Pakistan_16_December_1971.jpg"
+                  download class="btn btn-danger btn-sm mx-1"><i class="bi bi-download"></i> Download</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">The Surrender Ceremony</h6>
+              <p class="small text-secondary mb-0">Location: Ramna Racecourse, Dhaka</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 gallery-item genocide">
+          <div class="card bg-dark border-0 overflow-hidden shadow h-100">
+            <div class="gallery-img-wrapper position-relative">
+              <img src="Images/People fleeing to safer borders in banglasdesh.jpg" class="card-img-top gallery-img"
+                alt="Refugees of 1971">
+              <div class="gallery-hover-overlay d-flex align-items-center justify-content-center">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Refugees_of_1971_Bangladesh_Liberation_War.jpg"
+                  class="btn btn-light btn-sm mx-1 glightbox"><i class="bi bi-zoom-in"></i> Zoom</a>
+                <a href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Refugees_of_1971_Bangladesh_Liberation_War.jpg"
+                  download class="btn btn-danger btn-sm mx-1"><i class="bi bi-download"></i> Download</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h6 class="fw-bold mb-1">Mass Exodus</h6>
+              <p class="small text-secondary mb-0">People fleeing to safer borders</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+          <div class="position-relative overflow-hidden rounded-4 shadow-lg border border-3 border-white archive-frame">
+            <img src="Images/The historic 7th march speech .jpg" class="img-fluid w-100 zoom-effect"
+              alt="The Historic 7th March Speech">
+
+            <div class="position-absolute top-0 end-0 m-3">
+              <span class="badge bg-danger shadow-sm px-3 py-2">Featured Capture</span>
+            </div>
+
+            <div class="image-overlay d-flex align-items-end p-4">
+              <div class="text-white">
+                <p class="small mb-1"><i class="bi bi-geo-alt-fill me-1"></i> Racecourse Maidan, Dhaka</p>
+                <p class="small mb-0"><i class="bi bi-calendar-event me-1"></i> March 7, 1971</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold display-6 mb-3">Moments that Defined a Nation</h2>
+          <p class="lead text-muted mb-4">
+            This archive preserves the raw, unedited visual history of the struggle. Every image undergoes a digital
+            restoration process to ensure clarity while maintaining historical integrity.
+          </p>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="p-3 border rounded bg-white">
+                <h5 class="fw-bold text-danger mb-1">High-Res</h5>
+                <p class="small text-muted mb-0">Original format scans for researchers.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded bg-white">
+                <h5 class="fw-bold text-success mb-1">Verified</h5>
+                <p class="small text-muted mb-0">Cross-referenced with museum data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 d-flex gap-3">
+            <button class="btn btn-dark btn-lg px-4">View Gallery</button>
+            <button class="btn btn-outline-danger btn-lg px-4"><i class="bi bi-download me-2"></i>Download
+              Hi-Res</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="card border-0 shadow-sm bg-success bg-opacity-10 text-success">
+    <div class="card-body p-4">
+      <div class="d-flex align-items-center mb-3">
+        <i class="bi bi-calendar-check-fill fs-3 me-2"></i>
+        <h5 class="fw-bold mb-0">On This Day: April 11</h5>
+      </div>
+      <p class="small mb-0">
+        <strong>1971:</strong> Following the massacre at Dhaka University, Prime Minister Tajuddin Ahmad makes his first
+        broadcast to the nation via the secret radio station, officially organizing the resistance.
+      </p>
+      <a href="#" class="btn btn-sm btn-success mt-3 px-3 rounded-pill">Read More</a>
+    </div>
+  </div>
+  <section class="py-4 bg-dark border-top border-bottom border-danger">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-white border-end border-secondary pe-lg-5 mb-4 mb-lg-0">
+          <blockquote class="blockquote">
+            <p class="fst-italic">"This struggle is our struggle for freedom. This struggle is our struggle for
+              independence!"</p>
+            <footer class="blockquote-footer text-danger mt-2">Bangabandhu Sheikh Mujibur Rahman, <cite
+                title="Source Title">March 7, 1971</cite></footer>
+          </blockquote>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="p-3 bg-black rounded shadow-sm">
+            <div class="d-flex align-items-center">
+              <span class="badge bg-danger me-3 py-2">TODAY IN 1971</span>
+              <marquee class="text-secondary small fw-bold" behavior="scroll" direction="left">
+                APRIL 11: Prime Minister Tajuddin Ahmad makes his first radio broadcast, officially organizing the
+                Mujibnagar Government. &nbsp;&nbsp; | &nbsp;&nbsp; DIPLOMATIC FRONTS: International media begins
+                reporting on the refugee crisis at the borders.
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h3 class="fw-bold">1971: By The Numbers</h3>
+          <p class="text-muted">A statistical overview of the liberation struggle.</p>
+        </div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-3">
+          <div class="p-4 border-bottom border-danger border-4 bg-light shadow-sm">
+            <h2 class="fw-bold text-danger">11</h2>
+            <p class="text-uppercase small mb-0 fw-bold">Military Sectors</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 border-bottom border-success border-4 bg-light shadow-sm">
+            <h2 class="fw-bold text-success">10M</h2>
+            <p class="text-uppercase small mb-0 fw-bold">Refugees Displaced</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 border-bottom border-danger border-4 bg-light shadow-sm">
+            <h2 class="fw-bold text-danger">266</h2>
+            <p class="text-uppercase small mb-0 fw-bold">Days of War</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 border-bottom border-success border-4 bg-light shadow-sm">
+            <h2 class="fw-bold text-success">7</h2>
+            <p class="text-uppercase small mb-0 fw-bold">Bir Sreshthos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <img src="Images/Dr. Sitara Begum.jpg" class="rounded-circle border border-3 border-success mb-3"
+            alt="Civilian Witness" width="200">
+          <h4 class="fw-bold mb-1">Dr. Sitara Begum</h4>
+          <p class="text-success small mb-3">Intellectual Survivor | Medical Officer</p>
+          <p class="small text-secondary px-2">Witness to the systematic targeting of doctors at Dhaka Medical College
+            in mid-December.</p>
+        </div>
+        <div class="col-lg-8 p-4 p-md-5">
+          <h5 class="text-uppercase text-success fw-bold small mb-2 ls-wider">Testimony Summary</h5>
+          <p class="text-light-50 mb-4">
+            A chilling recount of the final 72 hours of the war, focusing on the preservation of medical supplies and
+            the clandestine treatment of wounded freedom fighters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 bg-secondary bg-opacity-10 border border-danger h-100">
+            <h4 class="fw-bold text-danger mb-3"><i class="bi bi-map-fill me-2"></i>Tactical Command</h4>
+            <p class="small text-secondary">The nation was divided into 11 sectors to coordinate the Mukti Bahini's
+              resistance. Each sector had a specific commander and strategy.</p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><span class="badge bg-danger me-2">Sector 2</span> Dhaka, Comilla & Noakhali</li>
+              <li class="mb-2"><span class="badge bg-danger me-2">Sector 10</span> Naval Commandos (Mobile)</li>
+              <li class="mb-2"><span class="badge bg-danger me-2">Sector 11</span> Mymensingh & Tangail</li>
+            </ul>
+            <button class="btn btn-sm btn-outline-danger mt-3">View Sector Maps</button>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 rounded-4 bg-secondary bg-opacity-10 border border-success h-100">
+            <h4 class="fw-bold text-success mb-3"><i class="bi bi-bank2 me-2"></i>National Heritage</h4>
+            <p class="small text-secondary">The struggle is immortalized in monuments like the Jatiyo Smriti Soudho in
+              Savar, symbolizing the seven stages of our movement.</p>
+            <div class="mt-4 p-3 bg-black bg-opacity-50 rounded">
+              <p class="fst-italic small mb-0">"Our history is written in blood, but our future is built on the unity of
+                our people."</p>
+            </div>
+            <button class="btn btn-sm btn-outline-success mt-4">Memorial Gallery</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About the Archive</h3>
+        <p>A non-profit initiative dedicated to documenting the heroic struggle for independence.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Martyr's List</a></li>
+          <li><a href="#">Sector Maps</a></li>
+          <li><a href="#">Research Papers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Liberation War Archive | Joy Bangla
+    </div>
+  </footer>
+
+</body>
+
+</html>
