@@ -17,6 +17,9 @@ preserving the history and memories of the Liberation War of Bangladesh. The arc
 contain documents, interviews, photographs, and provide a means for users to contribute their
 materials or contact the administrators.
 Job Scope:
+
+
+              Starting.......
 1. Homepage:
 a. Introduction to the archive and its significance in Bangladesh's history.
 b. Featured sections highlighting important documents, interviews, and photographs.
